@@ -1,0 +1,142 @@
+/* Modal styles for dashboard modals */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.35);
+  align-items: center;
+  justify-content: center;
+}
+.modal[style*="display: flex"] {
+  display: flex !important;
+}
+.modal .modal-content {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  min-width: 320px;
+  max-width: 95vw;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.18);
+  position: relative;
+}
+.modal .close {
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/* Modal styles */
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.18);
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  min-width: 320px;
+  max-width: 90vw;
+  text-align: center;
+  position: relative;
+}
+.modal-content .close {
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f9fa;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a4d8f;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+.nav-logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.nav-user {
+  font-size: 1rem;
+}
+.nav-logout {
+  background: #fff;
+  color: #1a4d8f;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 1.2rem;
+  transition: background 0.2s;
+}
+.nav-logout:hover {
+  background: #e3eaf2;
+}
+.dashboard-container {
+  display: flex;
+  min-height: 90vh;
+}
+.sidebar {
+  width: 220px;
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding: 2rem 0.5rem 2rem 1.5rem;
+  min-height: 90vh;
+  transition: width 0.2s;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar li {
+  margin-bottom: 1.2rem;
+}
+.sidebar a {
+  color: #1a4d8f;
+  text-decoration: none;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+}
+.sidebar a:hover {
+  color: #163e6c;
+}
+.main-content {
+  flex: 1;
+  padding: 2.5rem 2rem;
+}
+@media (max-width: 900px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    min-height: unset;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem 0.5rem 1rem 1.5rem;
+  }
+  .main-content {
+    padding: 1.5rem 0.7rem;
+  }
+}

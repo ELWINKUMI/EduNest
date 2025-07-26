@@ -1,0 +1,78 @@
+  <div id="addAdminModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close" id="closeAddAdminModal">&times;</span>
+      <h3>Add Admin to School</h3>
+      <div style="margin-top:1rem;">
+        <input type="text" id="newAdminName" placeholder="Admin Name" style="width:90%;margin-bottom:0.7rem;"><br>
+        <button id="saveNewAdminBtn" style="background:#1a4d8f;color:#fff;padding:0.5rem 1.2rem;border:none;border-radius:4px;">Add Admin</button>
+        <button id="cancelNewAdminBtn" style="margin-left:1rem;padding:0.5rem 1.2rem;border:none;border-radius:4px;background:#e0e0e0;">Cancel</button>
+        <div id="addAdminResult" style="margin-top:1rem;"></div>
+      </div>
+    </div>
+  </div>
+  <div id="editAdminModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close" id="closeEditAdminModal">&times;</span>
+      <h3>Edit Admin</h3>
+      <div style="margin-top:1rem;">
+        <input type="text" id="editAdminName" placeholder="Admin Name" style="width:90%;margin-bottom:0.7rem;"><br>
+        <input type="text" id="editAdminEmail" placeholder="Admin Email" style="width:90%;margin-bottom:0.7rem;"><br>
+        <button id="saveEditAdminBtn" style="background:#1a4d8f;color:#fff;padding:0.5rem 1.2rem;border:none;border-radius:4px;">Save</button>
+        <button id="cancelEditAdminBtn" style="margin-left:1rem;padding:0.5rem 1.2rem;border:none;border-radius:4px;background:#e0e0e0;">Cancel</button>
+        <div id="editAdminResult" style="margin-top:1rem;"></div>
+      </div>
+    </div>
+  </div>
+  <div id="resetPasswordModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close" id="closeResetPasswordModal">&times;</span>
+      <h3>Reset Admin Password</h3>
+      <div style="margin-top:1rem;">
+        <div id="resetPasswordResult" style="margin-bottom:1rem;"></div>
+        <button id="confirmResetPasswordBtn" style="background:#1a4d8f;color:#fff;padding:0.5rem 1.2rem;border:none;border-radius:4px;">Reset Password</button>
+        <button id="cancelResetPasswordBtn" style="margin-left:1rem;padding:0.5rem 1.2rem;border:none;border-radius:4px;background:#e0e0e0;">Cancel</button>
+      </div>
+    </div>
+  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduNest LMS - Dashboard</title>
+  <link rel="stylesheet" href="../styles/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">EduNest LMS</div>
+    <div class="nav-user" id="navUser"></div>
+    <button class="nav-logout" id="logoutBtn">Logout</button>
+  </nav>
+  <div class="dashboard-container">
+    <aside class="sidebar" id="sidebar">
+      <ul id="sidebarMenu">
+        <!-- Dynamic menu -->
+      </ul>
+    </aside>
+    <main class="main-content" id="mainContent">
+      <h2>Welcome to your dashboard</h2>
+      <div id="dashboardContent">
+        <!-- Dynamic content -->
+      </div>
+    </main>
+  </div>
+  <div id="confirmModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close" id="closeConfirmModal">&times;</span>
+      <h3>Confirm Deletion</h3>
+      <p id="confirmModalText">Are you sure you want to delete this school?</p>
+      <div style="margin-top:1.5rem;">
+        <button id="confirmDeleteBtn" style="background:#d32f2f;color:#fff;padding:0.5rem 1.2rem;border:none;border-radius:4px;">Delete</button>
+        <button id="cancelDeleteBtn" style="margin-left:1rem;padding:0.5rem 1.2rem;border:none;border-radius:4px;background:#e0e0e0;">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <script src="../scripts/dashboard.js"></script>
+</body>
+</html>

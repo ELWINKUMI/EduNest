@@ -1,0 +1,91 @@
+body {
+  background: #f7f9fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.login-container {
+  max-width: 350px;
+  margin: 5vh auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 2rem 2.5rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-container h2 {
+  margin-bottom: 1.5rem;
+  color: #1a4d8f;
+}
+#loginForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#loginForm label {
+  margin-bottom: 0.3rem;
+  color: #333;
+  font-size: 1rem;
+}
+#loginForm input {
+  margin-bottom: 1.1rem;
+  padding: 0.7rem;
+  border: 1px solid #cfd8dc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+#loginForm button {
+  background: #1a4d8f;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s;
+}
+#loginForm button:hover {
+  background: #163e6c;
+}
+.forgot-link {
+  display: block;
+  text-align: right;
+  color: #1a4d8f;
+  text-decoration: underline;
+  font-size: 0.97em;
+  margin-bottom: 0.7em;
+  cursor: pointer;
+}
+#loginMessage {
+  min-height: 1.2em;
+  color: #d32f2f;
+  font-size: 0.98em;
+  margin-top: 0.2em;
+  text-align: center;
+}
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.3);
+  display: flex; align-items: center; justify-content: center;
+}
+.modal-content {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  text-align: center;
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: 0.7em;
+  right: 1em;
+  font-size: 1.5em;
+  color: #888;
+  cursor: pointer;
+}

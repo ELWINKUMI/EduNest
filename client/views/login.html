@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduNest LMS - Login</title>
+  <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>EduNest LMS Login</h2>
+    <form id="loginForm">
+      <label for="userId">User ID</label>
+      <input type="text" id="userId" name="userId" required autocomplete="username">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required autocomplete="current-password">
+      <button type="submit">Login</button>
+      <a href="#" id="forgotPasswordLink" class="forgot-link">Forgot Password?</a>
+      <div id="loginMessage"></div>
+    </form>
+  </div>
+  <div id="forgotModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h3>Forgot Password</h3>
+      <p>For security, please contact your school admin to reset your password.</p>
+    </div>
+  </div>
+  <script src="../scripts/login.js"></script>
+</body>
+</html>
